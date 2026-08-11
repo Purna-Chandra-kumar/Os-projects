@@ -14,7 +14,6 @@ void contextSwitch(struct PCB *current, struct PCB *next){
 
     printf("Loading State of Process : %d\n", next->pid);
     strcpy(next->state, "RUNNING");
-
     printf("Context Switch: P%d -> P%d\n\n", current->pid, next->pid);
     printf("Context Switching")
 }
