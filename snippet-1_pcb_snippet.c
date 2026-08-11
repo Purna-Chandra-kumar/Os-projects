@@ -8,9 +8,12 @@ enum State{
     TERMINATED
 };
 
+
+
 struct PCB{
     int pid;
     enum State state;
+
     int programCounter;
     int registers[8];
     int priority;
